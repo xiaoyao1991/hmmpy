@@ -1,0 +1,45 @@
+.main h2{
+	text-align: center;
+}
+
+.main h4{
+	text-align: center;
+}
+
+.main i{
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 18px;
+}
+#example_full_record{
+	color: gray;
+}
+#example_author{
+	color: red;
+}
+#example_title{
+	color: blue;
+}
+#example_venue{
+	color: green;
+}
+#example_year{
+	color: purple;
+}
+
+#start_test_button{
+	margin-top: 200px;
+	text-align: center;
+}
+#start_test_button a{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid gray;
+	text-decoration: none;
+}	
+
+.rules{
+	margin-top: 20px;
+}

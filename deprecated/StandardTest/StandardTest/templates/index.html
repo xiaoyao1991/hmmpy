@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="main">
+	<h2>GrantForward Publication Segmentation Standard Test</h2>
+	<h4>Xiaoyao Qian (xiaoyao.qian[at]cazoodle.com)</h4>
+	<h3>Introduction</h3>
+	<p>
+		Hi all! This is a web interface for measuring precision and recall for publication segmentation performance. I'd like to ask you for helping deciding if a publication segmentation is correct or not, simple as is. We have a program that will automatically segment the publications, the task here is to manually conduct some test here in order to test the accuracy of segmentation the program performs. If you have any questions or suggestions related to the task or the publication segmentation, please feel free to contact me!
+	</p>
+	<p>
+		A publication record will be segmented into 4 fields: 
+		<ul>
+			<li>authors</li>
+			<li>title</li> 
+			<li>venue(conference/journal/book etc.)</li>
+			<li>year</li>
+		</ul>
+	</p>
+	<p>An example publication is something like: </p>
+	<p>
+		<i id="example_full_record">"Incremental and Accuracy-Aware Personalized PageRank through Scheduled Approximation. F. Zhu, Y. Fang, K. C.-C. Chang, and J. Ying. PVLDB, 6(6), 2013. In VLDB 2013"</i>
+	</p>
+	<p>
+		and a correct segmentation will look like:
+		<ul>
+			<li><b>Author Field: </b><i id="example_author">F. Zhu, Y. Fang, K. C.-C. Chang, and J. Ying.</i></li>
+			<li><b>Title Field: </b><i id="example_title">Incremental and Accuracy-Aware Personalized PageRank through Scheduled Approximation.</i></li>
+			<li><b>Venue Field: </b><i id="example_venue">PVLDB, 6(6), 2013. In VLDB</i></li>
+			<li><b>Year Field: </b><i id="example_year">["2013"]</i></li>
+		</ul>
+	</p>
+	<h3>Things to Know before Testing</h3>
+	<ul>
+		<li class="rules">
+			Some of the publication record may be of correct format, or even not a publication record, for these records, simply mark them as invalid, and we will not count them into calculations.
+		</li>
+		
+		<li class="rules">
+			If correct segmentations are provided, you will be asked to decide if the predicted segmentations by the program match the correct segmentations.
+		</li>
+
+		<li class="rules">
+			Punctuations don't matter. <i>e.g F Zhu Y Fang K CC Chang,,</i> also count as correct author field. As long as the content in the field is correct. 
+		</li>
+
+		<li class="rules">
+		</li>
+
+		<li class="rules">
+		</li>
+
+		<li class="rules">
+		</li>
+
+		<li class="rules">
+		</li>
+
+		<li class="rules">
+		</li>
+
+		<li class="rules">
+		</li>
+
+		<li class="rules">
+		</li>
+
+	</ul>
+
+
+
+	<p id="start_test_button"><a href='/test/'>I understand! Begin test!</a></p>
+</div>
+
+{% endblock %}
